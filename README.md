@@ -25,23 +25,23 @@ So, let's say you rolled something with a low population, despite existing for 8
 
 Maybe you rolled an outpost that has everything to become a bustling metropolis, but is still no more than a lone outpost. Perhaps the area is too dangerous, with too many bandits around. Maybe if a group could get rid of them, huh?
 
-## Why Nim?
-It's a language that I find interesting, even if I don't do stuff with it as often as I should. The Garbage Collector annoyed me for a while, since I was using global variables at first, but nothing some Object Orientation didn't fix
-
-As for the language, think of it as Advanced Python, as the syntax is somewhat familiar, but way faster at doing the maths
+## Why [Nim?](https://nim-lang.org/)
+It's a language that I find interesting, even if I don't do stuff with it as often as I should. Think of it as Advanced Python, as the syntax is somewhat familiar, but way faster at doing the stuff it's supposed to. Also, it compiles to to a lot of processors/OSes
 
 ### But isn't this project too small to bother with speed?
 It is! But, if I only ever bother with that when I decide that the speed **will** be needed, then I'll probably never actually do anything in Nim.
 
 ## Why not a web page, javascript?
-The funny thing is that Nim does compile to JS! The problem is that the UI lib I choose, Nimx, has a currently (as of June 19 2023) open issue where compiling to JS fails.
+The funny thing is that Nim does compile to JS! The problem is that the UI lib I choose, Nimx, has, as of June 19 2023, this [open issue](https://github.com/yglukhov/nimx/issues/520) where compiling to JS fails.
 
 # Compiling yourself
 * Download and install Nim
-* Run the Nimble package manager to install Nimx. It should be `nimble install nimx` on any OS
+* Run the Nimble package manager to install [Nimx](https://github.com/yglukhov/nimx). It should be `nimble install nimx` on any OS
 * Run the command `nim c --d:release --threads:on settlegen.nim`
   * If you add `--r` as an option, it will automatically run once it finishes compiling
 * Run the compiled executable
+
+On Windows 10, the .exe file should be around 1.8MB. You might also need SDL2.dll on the same folder for it to work, which is why I put a copy on this repo.
 
 **NOT TESTED ON LINUX OR MACOS!**
 
