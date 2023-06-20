@@ -1,3 +1,5 @@
+Para a versão em português deste Leia-me, [clique aqui](https://github.com/ACDouble/f_settlementgenerator/blob/main/README_PTBR.md)
+
 # The elevator pitch
 A tool for Game Masters of medieval and fantasy games to come up with inhabited places of interest
 
